@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px auto 100px;
+    height: 100vh;
+    
+}
+.header{
+    background-color: orange;
+    grid-column-start: span 3;
+}
+.side{
+    background-color: aliceblue;
+    grid-column-start: span 1;
+}
+.content{
+    background-color: aqua;
+    grid-column-start: span 2;
+
+}
+.footer{
+    background-color: blue;
+    grid-column-start: span 3;
+}
