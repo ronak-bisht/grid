@@ -1,24 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 100px auto 100px;
     height: 100vh;
-    
 }
 .header{
-    background-color: orange;
     grid-column-start: span 3;
+    background-color: blue;
 }
-.side{
-    background-color: aliceblue;
-    grid-column-start: span 1;
-}
-.content{
-    background-color: aqua;
-    grid-column-start: span 2;
 
+.side{
+    grid-column-start: span 1;
+    background-color: pink;
+}
+
+.content{
+    grid-column-start: span 2;
+    background-color: aqua;
 }
 .footer{
-    background-color: blue;
     grid-column-start: span 3;
+    background-color: yellow;
 }
